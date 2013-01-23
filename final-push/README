@@ -14,4 +14,4 @@ Copy your path to best.dat.
 Run:
 ./gen_gat.bin ../starting_path/santa_cities_processed.dat
 
-This updated best.dat with paths with better average.
+This procedure updates best.dat with paths with better average.
