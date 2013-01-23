@@ -3,7 +3,7 @@
 #include <map>
 #include <set>
 
-int test_count = 2000;
+int test_count = 200;
 int N = 150000;
 
 vector<int> ProducePath(map<int, pair<double, double> >& points,

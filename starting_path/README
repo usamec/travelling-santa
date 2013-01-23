@@ -1,5 +1,8 @@
 Compile using:
-g++ --std=gnu++0x -O2 produce_path.cc -o produce_path.bin
+g++ --std=gnu++0x -O2 produce_path2.cc -o produce_path.bin
 
 Usage:
 ./produce_path.bin santa_cities_processed.csv >path.dat
+
+This path producer uses 200 random points as next candidates,
+you can change this by changing variable test_count.

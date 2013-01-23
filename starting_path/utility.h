@@ -442,12 +442,9 @@ void StringToBigrams(const string& in, vector<string>* out) {
   }
 }
 
-void RemoveFromVector(vector<int>& x, int pos, vector<int>& backids) {
+void RemoveFromVector(vector<int>& x, int pos) {
   swap(x[pos], x[x.size()-1]);
   x.pop_back();
-  if (pos < x.size()) {
-    backids[x[pos]] = pos;
-  }
 }
 
 #endif
