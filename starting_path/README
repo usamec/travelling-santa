@@ -1,5 +1,5 @@
 Compile using:
-g++ --std=gnu++0x -O2 produce_path.cc -o produce_path
+g++ --std=gnu++0x -O2 produce_path.cc -o produce_path.bin
 
 Usage:
-./produce_path santa_cities_processed.csv >path.out
+./produce_path.bin santa_cities_processed.csv >path.dat

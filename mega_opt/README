@@ -1,14 +1,14 @@
 First compile get_closest.cc:
-g++ --std=gnu++0x get_closest.cc -O2 -o get_closest
+g++ --std=gnu++0x get_closest.cc -O2 -o get_closest.bin
 
 Then run it (it takes around 15 minutes):
-./get_closest ../santa_cities_processed.csv >closest.dat
+./get_closest.bin ../santa_cities_processed.csv >closest.dat
 
 Then compile megaopt:
-g++ --std=gnu++0x mega_opt.cc path.cc -O2 -o mega_opt
+g++ --std=gnu++0x mega_opt.cc path.cc -O2 -o mega_opt.bin
 
 And run it:
-./mega_opt <path_to_optimize> ../santa_cities_processed.csv closest.dat
+./mega_opt.bin <path_to_optimize> ../santa_cities_processed.csv closest.dat
 
 This continuously updates files sub.avopt and sub.maxopt with best paths with goal for average
 and maximum.
