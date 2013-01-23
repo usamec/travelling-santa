@@ -248,13 +248,14 @@ int main(int argc, char**argv) {
   //TestValidMove();
   //return 0;
 
-  FILE *fpoints = fopen(argv[2], "r");
-  FILE *fclosest = fopen(argv[3], "r");
+  FILE *fpoints = fopen(argv[1], "r");
+  FILE *fclosest = fopen(argv[2], "r");
 
   int id, x, y;
   while (fscanf(fpoints, "%d %d %d", &id, &x, &y)>0) {
     points[id] = make_pair(x, y);
   }
+  printf("points loaded\n");
 
   for (int i = 0; i < points.size(); i++) {
     vector<int> x;
@@ -279,6 +280,7 @@ int main(int argc, char**argv) {
   double d1 = p1.GetLength(points), d2 = p2.GetLength(points);
   best_max = max(d1, d2);
   best_av = (d1 + d2)/2;
+  printf("starting max %lf starting av %lf\n", best_max, best_av);
 
   boost::thread th1(Optimize, 5);
 /*  boost::thread th2(Optimize, 5);

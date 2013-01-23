@@ -2,3 +2,5 @@
 *.dat
 *.avopt
 *.maxopt
+*.swp
+*.log

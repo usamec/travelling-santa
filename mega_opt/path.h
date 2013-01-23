@@ -2,7 +2,6 @@
 #define PATH_H__
 
 #include "utility.h"
-#include "persistent_value.h"
 #include <vector>
 #include <tr1/unordered_map>
 
