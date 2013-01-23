@@ -1,0 +1,17 @@
+First install pystp from:
+http://code.google.com/p/pystp/
+
+A have python 2.x installed (we use 2.7.3)
+
+Compile:
+g++ --std=gnu++0x 4factor-to-2paths.cc -O2 -o 4factor-to-2paths.bin
+g++ --std=gnu++0x gen_gat.cc alt_cycle.cc -O2 -o gen_gat.bin
+
+Copy closest.dat from mega_opt folder.
+Generate edge.dat from lower_bound data (we have precomputed one in repo).
+Copy your path to best.dat.
+
+Run:
+./gen_gat.bin ../starting_path/santa_cities_processed.dat
+
+This updated best.dat with paths with better average.
