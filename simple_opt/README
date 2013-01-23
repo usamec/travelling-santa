@@ -1,0 +1,9 @@
+Compile:
+g++ -std=gnu++0x -O2 opt1.cc -o opt1.bin
+
+Run:
+./opt1.bin <path_to_optimize> ../starting_path/santa_cities_processed.csv
+
+It outputs (and updates) two files:
+best.dat - path with the best score
+<path_to_optimize> - current path
