@@ -8,4 +8,7 @@ How to get a solution from this mess:
 around 7 milion
 3. Use mega\_opt to reduce length even further. 
 4. Use stuff in final\_push to get length of path even more down. But this stuff optimizes average
-lenght of paths. So use mega\_opt to bring paths lenghts back together.
+length of paths. So use mega\_opt to bring paths lenghts back together.
+
+There is also our implementation of ILP + SAT + custom spliting pipeline. It's in directory ilp. You
+don't need to use it.
