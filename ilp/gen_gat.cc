@@ -25,7 +25,7 @@ void Optimize() {
 
   while(true) {
     mutex.lock();
-    FILE *fpath = fopen("xo", "r");
+    FILE *fpath = fopen("best.dat", "r");
 
     vector<int> p1, p2, ip1, ip2;
     for (int i = 0; i < points.size(); i++) {
@@ -320,7 +320,7 @@ void Optimize() {
     printf("new %lf %lf %lf %lf\n", nd1, nd2, max(nd1, nd2), (nd1+nd2)/2);
     mutex.lock();
     if ((nd1+ nd2)/2 < bd) {
-      FILE *fo = fopen("xo", "w");
+      FILE *fo = fopen("best.dat", "w");
       for (int i = 0; i < p1.size(); i++) {
         fprintf(fo, "%d,%d\n", np1[i], np2[i]);
       }
@@ -330,7 +330,7 @@ void Optimize() {
     }
     if (max(nd1, nd2) < bm) {
       bm = max(nd1, nd2);
-      FILE *fo = fopen("xom", "w");
+      FILE *fo = fopen("bestm.dat", "w");
       for (int i = 0; i < p1.size(); i++) {
         fprintf(fo, "%d,%d\n", np1[i], np2[i]);
       }
@@ -341,14 +341,14 @@ void Optimize() {
 }
 
 int main(int argc, char **argv) {
-  srand(atoi(argv[3]));
-  FILE *fpoints = fopen(argv[2], "r");
+  srand(time(NULL));
+  FILE *fpoints = fopen(argv[1], "r");
 
   int id, x, y;
   while (fscanf(fpoints, "%d %d %d", &id, &x, &y)>0) {
     points[id] = make_pair(x, y);
   }
-  FILE *fpath = fopen("xo", "r");
+  FILE *fpath = fopen("best.dat", "r");
 
   vector<int> p1, p2, ip1, ip2;
   for (int i = 0; i < points.size(); i++) {

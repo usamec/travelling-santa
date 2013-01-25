@@ -387,7 +387,7 @@ print N
 
 f.close()
 
-retval = os.system("./4factor-to-2paths %s %s %s" % (infile, tempfile, outfile))
+retval = os.system("./4factor-to-2paths.bin %s %s %s" % (infile, tempfile, outfile))
 print retval
 
 
