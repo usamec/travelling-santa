@@ -12,6 +12,6 @@ Generate edge.dat from lower_bound data (we have precomputed one in repo).
 Copy your path to best.dat.
 
 Run:
-./gen_gat.bin ../starting_path/santa_cities_processed.dat
+./gen_gat.bin ../starting_path/santa_cities_processed.csv
 
 This procedure updates best.dat with paths with better average.

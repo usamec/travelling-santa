@@ -11,6 +11,8 @@ Compile using:
 Copy your path to best.dat.
 
 Run:
-./gen_gat.bin ../starting_path/santa_cities_processed.dat
+./gen_gat.bin ../starting_path/santa_cities_processed.csv
 
 This procedure updates best.dat with paths with better average.
+
+To get in faster try to make parameters mi and ma smaller (gen_gat.cc line 51) 

@@ -348,6 +348,7 @@ int main(int argc, char **argv) {
   while (fscanf(fpoints, "%d %d %d", &id, &x, &y)>0) {
     points[id] = make_pair(x, y);
   }
+  printf("points loaded\n");
   FILE *fpath = fopen("best.dat", "r");
 
   vector<int> p1, p2, ip1, ip2;
@@ -364,6 +365,7 @@ int main(int argc, char **argv) {
 
   bd = (d1+ d2)/2;
   bm = max(d1, d2);
+  printf("opt stard %lf %lf\n", bd, bm);
   boost::thread th1(Optimize);
   boost::thread th2(Optimize);
   boost::thread th3(Optimize);
