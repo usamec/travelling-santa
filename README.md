@@ -1,7 +1,7 @@
 travelling-santa
 ================
 
-How to get a solution from this mess:
+## How to get a solution from this mess:
 
 1. Produce starting paths using stuff in starting\_path directory
 2. Use simple (but fast) improvements in simple\_opt directory to get lenght of paths to something
@@ -13,6 +13,7 @@ lenght of paths. So use mega\_opt to bring paths lenghts back together.
 There is also our implementation of ILP + SAT + custom spliting pipeline. It's in directory ilp. You
 don't need to use it.
 
-How to get a good lowerbound:
-1. Produce ajdust.dat using lower\_bound/adjust
+## How to get a good lowerbound:
+
+1. Produce ajdust.dat using lower\_bound/adjust (you also obtain a reasonably good lowerbound)
 2. TODO
