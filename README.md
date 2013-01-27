@@ -9,3 +9,7 @@ around 7 milion
 3. Use mega\_opt to reduce length even further. 
 4. Use stuff in final\_push to get length of path even more down. But this stuff optimizes average
 lenght of paths. So use mega\_opt to bring paths lenghts back together.
+
+How to get a good lowerbound:
+1. Produce ajdust.dat using lower\_bound/adjust
+2. TODO
