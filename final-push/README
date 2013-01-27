@@ -1,7 +1,7 @@
 First install pystp from:
 http://code.google.com/p/pystp/
 
-A have python 2.x installed (we use 2.7.3)
+And have python 2.x installed (we use 2.7.3)
 
 Compile:
 g++ --std=gnu++0x 4factor-to-2paths.cc -O2 -o 4factor-to-2paths.bin
@@ -12,6 +12,6 @@ Generate edge.dat from lower_bound data (we have precomputed one in repo).
 Copy your path to best.dat.
 
 Run:
-./gen_gat.bin ../starting_path/santa_cities_processed.dat
+./gen_gat.bin ../starting_path/santa_cities_processed.csv
 
 This procedure updates best.dat with paths with better average.

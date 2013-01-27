@@ -1,0 +1,18 @@
+Install PySTP and Numberjack with SCIP:
+http://code.google.com/p/pystp/
+https://github.com/eomahony/Numberjack
+
+Also you must have python 2.x installed (we use 2.7.3).
+And also boost-thread library.
+
+Compile using:
+./make.sh
+
+Copy your path to best.dat.
+
+Run:
+./gen_gat.bin ../starting_path/santa_cities_processed.csv
+
+This procedure updates best.dat with paths with better average.
+
+To get in faster try to make parameters mi and ma smaller (gen_gat.cc line 51) 
