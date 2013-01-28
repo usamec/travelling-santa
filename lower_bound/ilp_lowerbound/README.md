@@ -10,4 +10,4 @@ be undirected.
 3. cp ../adjust/adjust.dat
 4. ./ilp\_lowerbound.cpp.bin
 
-You may play with SOLVE\_SIZE constant. 
+You may play with SOLVE\_SIZE constant or solver being used (slow/optimized) 
