@@ -15,4 +15,5 @@ don't need to use it.
 
 How to get a good lowerbound:
 1. Produce ajdust.dat using lower\_bound/adjust
-2. TODO
+2. Get lowerbound using lower\_bound/ilp\_lowerbound
+3. TODO
