@@ -4,7 +4,11 @@ sys.path.append("/home/ppershing/python/numberjack/local_lib");
 sys.setrecursionlimit(4000)
 import Numberjack
 
-fin = open("solver.in", "r")
+assert len(sys.argv) == 3
+
+fin_filename = sys.argv[1]
+fout_filename = sys.argv[2]
+fin = open(fin_filename, 'r')
 tmp = fin.readline()
 tmp = fin.readline();
 N = int(tmp.strip())
@@ -98,6 +102,6 @@ for edges_to_skip in range(5):
 	assert res == True
 
 	cost.append(objective.get_value())
-fout = open("solver.out", "w")
+fout = open(fout_filename, "w")
 print >>fout, cost[0], cost[1], cost[2], cost[3], cost[4]
 fout.close()

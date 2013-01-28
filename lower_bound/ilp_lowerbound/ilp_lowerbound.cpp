@@ -264,7 +264,7 @@ vector<double> recursive_lowerbound(const vector<int>& pts,
     fprintf(fin, "\n");
   }
   fclose(fin);
-  int ret = system("./solver.py");
+  int ret = system("./solver_slow.py solver.in solver.out");
   assert(ret == 0);
   FILE* fout = fopen("solver.out", "r");
   double c0, c1, c2, c3, c4;
